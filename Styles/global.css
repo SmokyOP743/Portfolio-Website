@@ -1,0 +1,92 @@
+/* 1) Self-hosted Manrope (from /fonts) */
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2) Base reset */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; }
+
+/* 3) Global styles */
+body {
+  font-family: "Manrope", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Layout helpers */
+.container{
+  width: min(var(--container), calc(100% - 32px));
+  margin: 0 auto;
+}
+
+/* Basic section spacing */
+header { padding: var(--space-4) 0; }
+section { padding: var(--space-6) 0; }
+footer { padding: var(--space-5) 0; color: var(--muted); }
+
+h1, h2, h3 { margin: 0 0 var(--space-2) 0; line-height: 1.2; }
+p { margin: 0; color: var(--muted); }
+
+/* Temporary simple nav styling so it doesn't look ugly */
+nav.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+nav h1{
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: var(--space-4);
+  padding: 0;
+  margin: 0;
+}
+nav a{
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0.9;
+}
+nav a:hover{
+  color: var(--primary);
+}

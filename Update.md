@@ -40,6 +40,8 @@ Starting the actual development tomorrow. Goal is to stay consistent and ship a 
 
 - CSS components:
     Loader
+
+- Font: Manrope
     
 ### Challenges:
 - 
