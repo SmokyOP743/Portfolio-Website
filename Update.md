@@ -38,7 +38,9 @@ Starting the actual development tomorrow. Goal is to stay consistent and ship a 
     Text (Primary): #FAFAFA
     Text (Muted): #B0B0B0
 
-
+- CSS components:
+    Loader
+    
 ### Challenges:
 - 
 
