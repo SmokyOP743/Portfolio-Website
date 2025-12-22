@@ -27,6 +27,51 @@ document.addEventListener('DOMContentLoaded', function() {
       // const formData = new FormData(this);
       // fetch('/api/contact', { method: 'POST', body: formData })
     });
+
+  // ===================================
+  // HERO TYPEWRITER
+  // ===================================
+  const target = document.getElementById("typewriter");
+
+  if (target) {
+    const words = [
+      "Software Developer",
+      "AI Specialist",
+      "Front-End Builder",
+      "Problem Solver"
+    ];
+
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+      const currentWord = words[wordIndex];
+
+      charIndex += isDeleting ? -1 : 1;
+      target.textContent = currentWord.slice(0, charIndex);
+
+      let delay = isDeleting ? 60 : 95;
+
+      // finished typing the word
+      if (!isDeleting && charIndex === currentWord.length) {
+        delay = 1100;
+        isDeleting = true;
+      }
+
+      // finished deleting
+      if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        delay = 350;
+      }
+
+      setTimeout(typeEffect, delay);
+    }
+
+    typeEffect();
+  }
+
   }
 
 });

@@ -43,13 +43,18 @@ Starting the actual development tomorrow. Goal is to stay consistent and ship a 
 
 - Font: Manrope
     
-### Challenges:
-- 
 
-### Next Steps:
-- 
 
 ---
+
+## Day 2 – December 22, 2025
+
+### Planned:
+- Finish the website
+- Add my info
+
+### Completed
+
 
 
 <!-- Continue adding one section per day -->
