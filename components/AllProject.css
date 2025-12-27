@@ -50,14 +50,19 @@
     background: var(--surface);
     border: 1px solid rgba(var(--primary-rgb), 0.2);
     border-radius: var(--radius-md);
-    padding: var(--space-3);
+    padding: var(--space-2);
     transition: all 300ms ease;
     display: flex;
     flex-direction: column;
-    gap: var(--space-2);
+    gap: var(--space-1);
+    /* FIXED DIMENSIONS */
     min-width: 220px;
     max-width: 220px;
+    min-height: 300px;
+    /* ADD THIS */
+    max-height: 380px;
     flex-shrink: 0;
+    overflow: hidden;
 }
 
 .project-card-grid:hover {
@@ -70,19 +75,27 @@
 /* Project Icon - smaller */
 
 .project-icon img {
-    width: 190px;
-    height: 120px;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     border-radius: 8px;
-    margin: 0 auto;
 }
 
 
 /* Project Title - smaller */
 
+.project-icon {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 8px;
+    flex-shrink: 0;
+    /* Prevent shrinking */
+}
+
 .project-card-grid h3 {
     color: var(--primary);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
     margin: 0 0 var(--space-1) 0;
     line-height: 1;
@@ -93,14 +106,41 @@
 
 .project-description {
     color: var(--muted);
-    font-size: 12px;
-    line-height: 1.5;
-    flex-grow: 1;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    line-clamp: 3;
-    overflow: hidden;
+    font-size: 11px;
+    line-height: 1.4;
+    flex-grow: 0;
+    height: 45px;
+    /* Increase height to show ~3 lines */
+    overflow-y: auto;
+    /* Enable vertical scroll */
+    overflow-x: hidden;
+    /* Hide horizontal overflow */
+    padding-right: 4px;
+    /* Space for scrollbar */
+    /* Custom scrollbar styling */
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) rgba(var(--primary-rgb), 0.1);
+}
+
+
+/* Webkit scrollbar (Chrome, Safari, Edge) */
+
+.project-description::-webkit-scrollbar {
+    width: 4px;
+}
+
+.project-description::-webkit-scrollbar-track {
+    background: rgba(var(--primary-rgb), 0.05);
+    border-radius: 2px;
+}
+
+.project-description::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+.project-description::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
 }
 
 
