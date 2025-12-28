@@ -22,7 +22,6 @@
     --h: 240px;
     --translateZ: 380px;
     --rotateX: 0deg;
-    /* Changed from -12deg to 0deg for straight-on view */
     --perspective: 1400px;
     position: absolute;
     width: var(--w);
@@ -32,6 +31,7 @@
     transform: translate(-50%, -50%) perspective(var(--perspective));
     transform-style: preserve-3d;
     animation: rotating 30s linear infinite;
+    will-change: transform;
 }
 
 @keyframes rotating {

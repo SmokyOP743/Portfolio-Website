@@ -13,7 +13,6 @@
 .intro-text {
     text-align: left;
     color: var(--muted);
-    max-width: min(var(--container), calc(100% - 32px));
     ;
     margin-bottom: var(--space-6);
     font-size: 16px;
@@ -27,7 +26,6 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: var(--space-3);
-    max-width: min(var(--container), calc(100% - 32px));
     margin: 0 0 var(--space-6) 0;
     padding: var(--space-4);
     background: var(--surface);

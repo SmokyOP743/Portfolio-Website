@@ -80,6 +80,29 @@ Merry Christmas
 
 ### Planned: 
 - Add my projects
-- 
 
+### Completed: 
+- Added two projects
+
+## Day 6 - Decemeber 26, 2025
+
+### Planned:
+- Finish adding my projects
+
+### Completed:
+- UI Done
+- Projects Added
+
+## Day 7 - December 27, 2025
+Off
+
+## Day 8 - December 28, 2025
+
+### Planned:
+- Finish Website
+- Finish Contact Form Backend
+
+## Completed: 
+- Website 
+- 
 <!-- Continue adding one section per day -->
