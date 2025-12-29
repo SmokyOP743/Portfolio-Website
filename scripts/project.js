@@ -13,7 +13,7 @@ const projects = [{
         id: 2,
         name: "PyPhone",
         description: "Python-based application with 6 apps: Camera, Snake, Pong, Gallery, Browser, and bubble sort Visualizer. Built during SOARCS with a group.",
-        tech: ["Python", "CustomTkinter"],
+        tech: ["Python", "CustomTkinter", "GUI", "Web Camera", "Pygame"],
         github: "https://github.com/SmokyOP743/SoarCS",
         demo: "https://youtu.be/w59tqD9euUc?si=cPcVZcf_Te2i2tg7",
         icon: "assets/PyPhone.png",
