@@ -6,7 +6,7 @@ const projects = [{
         tech: ["HTML5", "CSS3", "JavaScript"],
         github: "https://github.com/SmokyOP743/Portfolio-Website",
         demo: null, // Set to your live site URL when deployed, or keep null
-        icon: "assets/Portfolio.png",
+        icon: "./assets/Portfolio.png",
         featured: true,
     },
     {
@@ -16,7 +16,7 @@ const projects = [{
         tech: ["Python", "CustomTkinter", "GUI", "Web Camera", "Pygame"],
         github: "https://github.com/SmokyOP743/SoarCS",
         demo: "https://youtu.be/w59tqD9euUc?si=cPcVZcf_Te2i2tg7",
-        icon: "assets/PyPhone.png",
+        icon: "./assets/PyPhone.png",
         featured: true
     },
     {
@@ -26,7 +26,7 @@ const projects = [{
         tech: ["Python", "Pygame"],
         github: "https://github.com/SmokyOP743/Simple-Python-Projects",
         demo: null,
-        icon: "assets/Snake.png",
+        icon: "./assets/Snake.png",
         featured: true
     },
     {
@@ -36,7 +36,7 @@ const projects = [{
         tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
         github: null,
         demo: "https://luxeciaga.com/",
-        icon: "assets/Luxeciaga.png",
+        icon: "./assets/Luxeciaga.png",
         featured: true,
     }
 ];
