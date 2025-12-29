@@ -314,9 +314,6 @@ section {
    FOOTER
    =================================== */
 
-
-/* Footer padding and styling */
-
 footer {
     padding: var(--space-5) 0;
     border-top: 1px solid var(--border);
