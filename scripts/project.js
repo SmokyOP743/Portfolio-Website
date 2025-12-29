@@ -16,7 +16,7 @@ const projects = [{
         tech: ["Python", "CustomTkinter", "GUI", "Web Camera", "Pygame"],
         github: "https://github.com/SmokyOP743/SoarCS",
         demo: "https://youtu.be/w59tqD9euUc?si=cPcVZcf_Te2i2tg7",
-        icon: "./assets/PyPhone.png",
+        icon: "./assets/Pyphone.png",
         featured: true
     },
     {
